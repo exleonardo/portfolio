@@ -3,10 +3,10 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) =
   <svg
     {...props}
     fill={'none'}
-    height={25}
+    height={50}
     ref={ref}
     viewBox={'0 0 32 32'}
-    width={25}
+    width={50}
     xmlns={'http://www.w3.org/2000/svg'}
   >
     <circle cx={16} cy={16} fill={'url(#a)'} r={14} />
