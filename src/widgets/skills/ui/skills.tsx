@@ -3,7 +3,7 @@ import { IconSkill, IconSkillBlock, SkillBlock, SkillTitle } from '@/widgets/ski
 
 export const Skills = () => {
   return (
-    <SkillBlock>
+    <SkillBlock id={'skills'}>
       <SkillTitle>My skills</SkillTitle>
       <IconSkillBlock>
         {skillsIcon.map(icon => {
