@@ -12,7 +12,8 @@ export const PortfolioTitle = styled.h2`
   font-weight: 700;
   line-height: 48px;
   padding-bottom: 40px;
-  padding-top: 40px;
+
+  padding-top: 100px;
   box-sizing: inherit;
   display: flex;
   position: relative;

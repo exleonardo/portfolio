@@ -15,7 +15,7 @@ export const Portfolio = () => {
   const { handleMouseEnter, handleMouseLeave, project } = usePortfolio()
 
   return (
-    <PortfolioBlock>
+    <PortfolioBlock id={'portfolio'}>
       <PortfolioTitle>Portfolio</PortfolioTitle>
       <ProjectsBlock>
         {project.map(pr => {
