@@ -5,16 +5,22 @@
   --line-height-s: 16px;
   --line-height-m: 24px;
   --line-height-l: 36px;
+  --line-height-xl: 48px;
 
   // font sizes
-  --font-size-xs: 0.75rem;
-  --font-size-s: 0.875rem;
-  --font-size-m: 1rem;
-  --font-size-l: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-xxl: 1.625rem;
+  --font-size-xs: 0.75rem; // 12px
+  --font-size-s: 0.875rem; // 14px
+  --font-size-m: 1rem; // 16px
+  --font-size-l: 1.125rem; // 18px
+  --font-size-xl: 1.25rem; // 20px
+  --font-size-xlm: 1.5rem; // 24px
+  --font-size-xxl: 1.625rem; // 26px
+  --font-size-xxxl: 1.75rem; // 28px
+  --font-size-extra-large: 2.5rem; // 40px
 
   // font weights
   --font-weight-regular: 400;
+  --font-weight-normal: 500;
   --font-weight-bold: 700;
+  --font-weight-bolder: 900;
 }
