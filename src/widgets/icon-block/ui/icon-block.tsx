@@ -1,14 +1,16 @@
-import { InstagramIcon } from '@/assets/icons/instagram'
-import { LinkedInIcon } from '@/assets/icons/linkedIn'
-import { TelegramIcon } from '@/assets/icons/telegram'
-import { IconBlockItem } from '@/widgets/icon-block'
+import { iconLink } from '@/common/icon-link/icon-link'
+import { IconBlockItem, LinkIcon } from '@/widgets/icon-block'
 
 export const IconBlock = () => {
   return (
     <IconBlockItem>
-      <InstagramIcon />
-      <LinkedInIcon />
-      <TelegramIcon />
+      {iconLink.map(element => {
+        return (
+          <LinkIcon href={element.link} key={element.id} target={'_blank'}>
+            {element.icon}
+          </LinkIcon>
+        )
+      })}
     </IconBlockItem>
   )
 }
