@@ -27,6 +27,8 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 input,
@@ -53,5 +55,14 @@ body {
   font-family: var(--font-family-primary), sans-serif;
   line-height: var(--line-height-m);
 
-  background-color: rgb(30 30 30);
+  background-color: var(--color-dark-500);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: unset;
+  border: none;
 }
