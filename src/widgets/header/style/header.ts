@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll'
+
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
@@ -7,37 +9,51 @@ export const StyledHeader = styled.header`
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 0px 80px 0px 80px;
+  padding: 0 80px 0 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: rgb(52, 52, 52);
+  background: var(--color-dark-600);
   align-items: center;
 `
 export const StyledUl = styled.ul`
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 `
 export const ElementLink = styled.li`
   &:not(:first-child) {
     margin-left: 60px;
   }
 `
-export const Link = styled.a`
+export const NavLink = styled(Link)`
   text-decoration: none;
+  cursor: pointer;
+  color: var(--color-light-50);
+  transition: 0.3s ease-in-out;
 
-  &:visited {
-    color: rgb(149, 149, 149);
+  &.active {
+    color: var(--color-warning-900);
+
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    line-height: var(--line-height-m);
   }
 
   &:hover {
-    color: rgb(227, 227, 227);
+    color: var(--color-light-300);
   }
 
-  font-family: Lato;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-m);
+`
+export const LogoLink = styled.a`
+  & > svg {
+    transition: 0.3s;
+    fill: var(--color-light-50);
+
+    &:hover {
+      cursor: pointer;
+      fill: var(--color-light-300);
+    }
+  }
 `
