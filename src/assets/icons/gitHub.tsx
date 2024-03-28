@@ -1,7 +1,8 @@
 import { Ref, SVGProps, forwardRef, memo } from 'react'
+
 const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
-    fill={'grey'}
+    fill={'white'}
     ref={ref}
     viewBox={'0 0 50 50'}
     width={50}
