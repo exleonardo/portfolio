@@ -9,17 +9,17 @@ export const SkillBlock = styled.div`
   padding-top: 100px;
   width: 100%;
   z-index: 10;
-  box-sizing: border-box;
+
   background: inherit;
 `
 export const SkillTitle = styled.h2`
-  color: rgb(254, 254, 254);
-  font-family: Lato;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
+  color: var(--color-light-50);
+
+  font-size: var(--font-size-extra-large);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xl);
   margin-bottom: 40px;
-  margin-top: 0;
+
   display: flex;
   justify-content: center;
 `
@@ -41,15 +41,16 @@ export const IconSkill = styled.div`
 
   > svg {
     transition: 0.4s;
+
     &:hover {
       transform: scale(1.2);
     }
   }
+
   > span {
-    color: rgb(149, 149, 149);
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
+    color: var(--color-dark-100);
+
+    font-size: var(--font-size-xlm);
+    font-weight: var(--font-weight-bold);
   }
 `
