@@ -1,6 +1,7 @@
 import Tilt from 'react-parallax-tilt'
 
 import { DownloadIcon } from '@/assets/icons/download'
+import { linkCv } from '@/common/link-cv/link-cv'
 import { Button } from '@/shared/button'
 import {
   AboutMe,
@@ -16,7 +17,7 @@ import avatar from '../../../assets/image/user-photo2.png'
 
 export const AboutMeDescription = () => {
   return (
-    <AboutMe>
+    <AboutMe id={'aboutMe'}>
       <AboutMeTitle>About Me</AboutMeTitle>
       <Experience>Experienced Frontend Developer with a diverse skill set.</Experience>
       <AboutMeBlock>
@@ -34,7 +35,7 @@ export const AboutMeDescription = () => {
           Hook Form, Formik, and Zod for form management and data validation. I am an experienced
           developer with a wide range of skills in frontend development. My projects are
           characterized by high-quality code, responsive design, and good architecture.
-          <Button variant={'primary'}>
+          <Button as={'a'} href={linkCv} target={'_blank'} variant={'primary'}>
             <DownloadIcon height={24} width={24} /> Download CV
           </Button>
         </Description>
