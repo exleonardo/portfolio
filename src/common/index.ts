@@ -1,2 +1,5 @@
 export * from './skills-icon/skills-icon'
 export * from './project-items/project-items'
+export * from './navigate-item/navigate-item'
+export * from './link-cv/link-cv'
+export * from './icon-link/icon-link'
