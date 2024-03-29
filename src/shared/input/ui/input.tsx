@@ -22,18 +22,17 @@ export const Input = forwardRef<HTMLInputElement, Props>(
   }
 )
 const StyleInput = styled.input`
-  min-width: 500px;
+  max-width: 500px;
+  width: 100%;
   color: white;
   height: 54px;
   border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+
   padding: 14px 24px 14px 24px;
-  margin: 0px 30px;
+
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--color-dark-600);
+
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus,
@@ -42,6 +41,7 @@ const StyleInput = styled.input`
 
     -webkit-text-fill-color: #fff;
   }
+
   &:hover {
     border: 1px solid grey;
   }
