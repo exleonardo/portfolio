@@ -23,18 +23,20 @@ export const Textarea = forwardRef<HTMLTextAreaElement, Props>(
 )
 
 const StyleTextarea = styled.textarea`
-  min-width: 500px;
+  max-width: 500px;
+  width: 100%;
   color: white;
   height: 150px;
   border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+
   padding: 14px 24px 14px 24px;
 
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--color-dark-600);
+
+  &:focus-visible {
+    outline: none;
+  }
 
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
@@ -44,6 +46,7 @@ const StyleTextarea = styled.textarea`
 
     -webkit-text-fill-color: #fff;
   }
+
   &:hover {
     border: 1px solid grey;
   }
