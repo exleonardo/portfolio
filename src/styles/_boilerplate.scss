@@ -3,7 +3,7 @@ html {
 
   box-sizing: border-box;
 
-  font-size: 100%;
+  font-size: 1rem;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -65,4 +65,12 @@ ul {
 button {
   background-color: unset;
   border: none;
+}
+
+h1 {
+  font-size: calc((100vw - 360px) / (1920 - 360) * (70 - 25) + 25px);
+}
+
+h2 {
+  font-size: calc((100vw - 360px) / (1920 - 360) * (28 - 20) + 20px);
 }
