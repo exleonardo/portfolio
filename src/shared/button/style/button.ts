@@ -5,16 +5,17 @@ export const ButtonStyled = styled.button<ButtonProps>`
   cursor: pointer;
   text-decoration: none;
   display: flex;
-  flex-direction: row;
-  flex-grow: 0;
-  align-items: flex-end;
+
+  align-items: center;
   justify-content: center;
 
+  width: 100%;
   transition: 0.3s;
   min-width: ${props => (props.fullWidth ? '100%' : '145px')};
+
   z-index: 10;
   height: 44px;
-  padding: 12px 10px;
+
   gap: 8px;
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-bold);
