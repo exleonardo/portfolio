@@ -33,7 +33,7 @@ export const ContactMe = () => {
         <UserDescriptionSend>
           <Textarea name={'message'} required title={'Project Details'} />
           <Button type={'submit'} variant={'secondary'}>
-            send
+            Send
           </Button>
         </UserDescriptionSend>
       </BlockForm>
