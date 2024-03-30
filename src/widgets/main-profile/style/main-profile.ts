@@ -5,7 +5,18 @@ export const MainStyle = styled.main`
   margin-left: 80px;
   margin-right: 80px;
   align-items: flex-start;
-  display: flex;
 
+  display: flex;
+  gap: 36px;
   justify-content: space-between;
+  @media screen and (width <= 992px) {
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 0;
+  }
+  @media screen and (width <= 576px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `
