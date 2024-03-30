@@ -1,7 +1,8 @@
 import { Ref, SVGProps, forwardRef, memo } from 'react'
+
 const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
   <svg
-    data-name={'Layer 2'}
+    height={25}
     ref={ref}
     viewBox={'0 0 48 48'}
     width={25}
