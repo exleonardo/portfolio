@@ -2,21 +2,18 @@ import styled from 'styled-components'
 
 export const ContactMeBlock = styled.div`
   display: flex;
-  margin-left: 80px;
-  margin-right: 80px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
 
-  padding-top: 6.25rem;
   background: inherit;
   z-index: 10;
   position: relative;
-  padding-bottom: 9.3rem;
+  padding: 6.25rem 80px 9.3rem;
   @media screen and (width <= 992px) {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `
 export const ContactMeTitle = styled.h2`
