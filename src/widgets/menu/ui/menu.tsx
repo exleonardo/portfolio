@@ -1,9 +1,13 @@
 import { navigateItem } from '@/common'
 import { ElementLink, NavLink, StyledUl } from '@/widgets/header/style/header'
+import { Navigation } from '@/widgets/menu'
 
-export const Menu = () => {
+type MenuProps = {
+  hideOnMobile?: boolean
+}
+export const Menu = ({ hideOnMobile }: MenuProps) => {
   return (
-    <nav>
+    <Navigation hideOnMobile={hideOnMobile}>
       <StyledUl>
         {navigateItem.map(({ id, link, title }) => {
           return (
@@ -15,6 +19,6 @@ export const Menu = () => {
           )
         })}
       </StyledUl>
-    </nav>
+    </Navigation>
   )
 }
