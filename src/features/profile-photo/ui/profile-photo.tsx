@@ -1,8 +1,7 @@
 import Tilt from 'react-parallax-tilt'
 
+import avatar from '@/assets/image/user-photo.png'
 import { BackGround, BlockPhoto, UserPhoto } from '@/features/profile-photo'
-
-import avatar from '../../../assets/image/user-photo.png'
 
 export const ProfilePhoto = () => {
   return (
