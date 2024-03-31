@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const ButtonCV = styled.div`
   display: flex;
   margin-top: 60px;
-  width: 100%;
+  max-width: max-content;
+  position: relative;
   gap: 24px;
   @media screen and (width <= 992px) {
     flex-wrap: wrap;
