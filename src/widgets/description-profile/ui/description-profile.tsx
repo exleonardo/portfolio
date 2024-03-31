@@ -1,15 +1,15 @@
-import { Developer, Hello, Name } from '@/widgets/description-profile'
+import { Developer, Hello, Name, ProfileBlock } from '@/widgets/description-profile'
 import Typewriter from 'typewriter-effect'
 
 export const DescriptionProfile = () => {
   return (
-    <div>
+    <ProfileBlock>
       <Hello>Hi I am</Hello>
       <Name>Alexander Khomenok</Name>
 
       <Developer>
         <Typewriter options={{ autoStart: true, loop: true, strings: ['Frontend Developer'] }} />
       </Developer>
-    </div>
+    </ProfileBlock>
   )
 }
