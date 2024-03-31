@@ -29,6 +29,12 @@ export const IconSkillBlock = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  @media screen and (width <= 576px) {
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: flex-start;
+    overflow: auto;
+  }
 `
 export const IconSkill = styled.div`
   min-width: 200px;
