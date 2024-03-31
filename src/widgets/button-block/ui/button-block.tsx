@@ -7,9 +7,10 @@ import { ButtonCV } from '@/widgets/button-block'
 export const ButtonBlock = () => {
   return (
     <ButtonCV>
-      <Link smooth spy to={'contactMe'}>
+      <Link smooth spy style={{ width: '100%' }} to={'contactMe'}>
         <Button variant={'primary'}>Hire me</Button>
       </Link>
+
       <Button as={'a'} href={linkCv} target={'_blank'} variant={'secondary'}>
         Download CV
       </Button>
