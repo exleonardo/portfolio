@@ -8,6 +8,7 @@ import {
   AboutMeBlock,
   AboutMeTitle,
   BackGround,
+  ButtonBlock,
   Description,
   Experience,
   UserPhotoDescription,
@@ -35,9 +36,11 @@ export const AboutMeDescription = () => {
           Hook Form, Formik, and Zod for form management and data validation. I am an experienced
           developer with a wide range of skills in frontend development. My projects are
           characterized by high-quality code, responsive design, and good architecture.
-          <Button as={'a'} href={linkCv} target={'_blank'} variant={'primary'}>
-            <DownloadIcon height={24} width={24} /> Download CV
-          </Button>
+          <ButtonBlock>
+            <Button as={'a'} href={linkCv} target={'_blank'} variant={'primary'}>
+              <DownloadIcon height={24} width={24} /> Download CV
+            </Button>
+          </ButtonBlock>
         </Description>
       </AboutMeBlock>
     </AboutMe>
