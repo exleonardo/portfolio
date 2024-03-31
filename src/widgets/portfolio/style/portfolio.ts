@@ -5,6 +5,7 @@ export const PortfolioBlock = styled.section`
   background: inherit;
   position: relative;
   padding-top: 6.25rem;
+  width: 100%;
 `
 export const PortfolioTitle = styled.h2`
   color: var(--color-light-50);
@@ -48,6 +49,8 @@ export const Project = styled.div`
   flex-direction: column;
 
   width: 415px;
+  margin-left: 20px;
+  margin-right: 20px;
 `
 export const ImgProj = styled.div<ImgProjProps>`
   height: 415px;
@@ -77,6 +80,7 @@ export const LinkBlock = styled.div`
 export const Link = styled.a`
   border: 2px solid var(--color-warning-900);
   display: flex;
+  color: inherit;
 
   align-items: center;
 
@@ -97,6 +101,7 @@ export const GitLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
+  color: inherit;
 
   &:hover {
     color: var(--color-light-50);
