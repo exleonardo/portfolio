@@ -22,29 +22,50 @@ export const AboutMeBlock = styled.div`
   display: flex;
   align-items: center;
   gap: 100px;
-  min-height: 400px;
+  max-height: max-content;
+  width: 100%;
+
   padding-bottom: 10px;
+  @media screen and (width <= 992px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
 `
 export const UserPhotoDescription = styled.img`
-  width: 460px;
-  height: 450px;
-  z-index: 10;
-  background-size: cover;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+
+  width: 100%;
+  aspect-ratio: 1/1;
+  min-height: 300px;
+  min-width: 260px;
+  z-index: 30;
 `
 
 export const BackGround = styled.div`
-  width: 480px;
+  max-width: 550px;
+
+  min-width: 275px;
   display: flex;
+
   justify-content: center;
   align-items: flex-end;
-  height: 400px;
+  max-height: 400px;
+
   z-index: 20;
 
   border-radius: 261.5px 261.5px 12px 12px;
   background: var(--color-dark-600);
+  @media screen and (width <= 992px) {
+    margin-top: 5rem;
+    max-width: 418px;
+  }
 `
 export const Description = styled.div`
   color: var(--color-dark-100);
+  max-width: 650px;
 
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-normal);
@@ -55,9 +76,22 @@ export const Description = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   align-self: flex-end;
+  @media screen and (width <= 576px) {
+  }
 `
 export const AboutMe = styled.div`
   padding-top: 100px;
   margin-right: 80px;
   margin-left: 80px;
+  @media screen and (width <= 992px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+`
+export const ButtonBlock = styled.div`
+  @media screen and (width <= 576px) {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+  }
 `
